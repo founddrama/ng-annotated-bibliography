@@ -69,6 +69,25 @@ dealing with `$`-prefixed properties directly, it's probably an AngularJS code
 smell, but this technique looks pretty smart, and I think we can trust `$dirty`
 and `$invalid` to be pretty stable features.
 
+### Fletcher: "Decoupling from the DOM with Angular" (2013)
+[[44][44]] \#controller \#directive \#separation-of-concerns
+
+Rob Fletcher:
+
+> Managing that kind of separation of concerns is the promise of Angular in a
+> nutshell.
+
+A good case study in best practices with controllers and directives and how to
+think about separation of concerns in AngularJS. This is a particularly
+interesting post because there's a strong temptation when developing directives
+to "put it all in there" -- that once you've gotten to the point of creating the
+directive, you're not really thinking about controllers anymore. But Fletcher
+puts it well:
+
+> Remember controllers are for managing view _state_ and directives are for
+> managing the view _implementation_. If you find yourself mixing those concerns
+> step back and think about how you can separate them.
+
 ### Fox: "Server-side HTML vs. JS Widgets vs. Single-Page Web Apps" (2013)
 [[42][42]] \#architecture \#single-page-apps
 
@@ -276,6 +295,16 @@ i.e., Angular hooked into SVG "for free".
 Jesus Rodriguez with a deep dive into the `$digest` cycle and how to master
 `$watch` and `$apply`.
 
+### Rodriguez: "Tip: Directives With the Same Name" (2013)
+[[43][43]] \#directive
+
+Jesus Rodriguez points out that AngularJS basically overloads directives,
+effectively stacking them as an array of callables. This can make it easy to
+"magically" add functionality (e.g., logging on top of the usual `ng-click`
+behavior, as in his example), and though it may be "very intentional" in their
+code, this kind of overloading seems potentially dangerous. Use with caution;
+consider AOP instead?
+
 ### Rothenberg: "The 'Magic' behind AngularJS Dependency Injection" (2013)
 [[14][14]] \#dependency-injection \#minification \#quirks
 
@@ -394,3 +423,5 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [40]: http://www.funnyant.com/choosing-javascript-mvc-framework/ "Size Does Matter: Choosing a Javascript MVC Framework"
 [41]: http://joelhooks.com/blog/2013/09/15/why-i-built-an-angularjs-training-site-on-rails/ "Why I Built an AngularJS Training Site on Rails"
 [42]: http://blog.pamelafox.org/2013/05/frontend-architectures-server-side-html.html "Server-side HTML vs. JS Widgets vs. Single-Page Web Apps"
+[43]: http://angular-tips.com/blog/2013/08/tip-directives-with-the-same-name/ "Tip: Directives With the Same Name"
+[44]: http://blog.freeside.co/post/60977491011/decoupling-from-the-dom-with-angular "Decoupling from the DOM with Angular"
