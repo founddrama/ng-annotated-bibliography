@@ -137,6 +137,33 @@ Overview of services. Defining via `module.service` vs. `module.factory` vs.
 `module.provider`. (Mentions but does not cover `value` and `constant`
 dependencies.)
 
+- `service` calls `factory`
+  -  and/but uses `new` on constructor fn via `$injector.instantiate`
+- `factory` calls `provider`
+  - _but_ no `new`, and expects your "constructor" to return an object
+- `provider` makes internal use of `$get`
+  - maximum flexibility for maximum complexity
+
+```
+function provider(name, provider_) {
+    if (isFunction(provider_) || isArray(provider_)) {
+      provider_ = providerInjector.instantiate(provider_);
+    }
+    if (!provider_.$get) {
+      throw $injectorMinErr('pget', "Provider '{0}' must define $get factory method.", name);
+    }
+    return providerCache[name + providerSuffix] = provider_;
+  }
+
+  function factory(name, factoryFn) { return provider(name, { $get: factoryFn }); }
+
+  function service(name, constructor) {
+    return factory(name, ['$injector', function($injector) {
+      return $injector.instantiate(constructor);
+    }]);
+  }
+```
+
 ### Hooks: "Why I Built an AngularJS Training Site on Rails" (2013)
 [[41][41]]
 
