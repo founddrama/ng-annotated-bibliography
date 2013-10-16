@@ -369,6 +369,19 @@ because he is able to demonstrate so much of the library's power in such a short
 and digestible post. (And/but if you want a post that's comparing several of
 these MV* frameworks, you might want to check out [Steve Sanderson's "the Seven Frameworks" post][27].
 
+### Thomas: "Enhancing AngularJS Logging using Decorators"
+[[45][45]] \#service \#decorator \#aop
+
+Though he doesn't cite something like [Gechev's methods](http://blog.mgechev.com/2013/08/07/aspect-oriented-programming-with-javascript-angularjs/),
+Thomas describes using `$provide.decorator()` as the built-into-Angular solution
+for AOP. It's a thorough example of how using the `decorator` function to modify
+services in Angular. That being said, I have mixed feelings about the slightly
+more complicated (`$log.getInstance`?) version of `$log` that he ends up with.
+(As an aside: his use of RequireJS makes this not a "pure Angular" post and
+diminishes some of the value; although I can see _why_ he went this route, I
+think it adds some unnecessary overhead w/r/t/ illustrating the specific points
+about `decorator`.)
+
 ### Varwig: "AngularJS: Views vs. Directives" (2013)
 [[28][28]] \#view \#directive
 
@@ -452,3 +465,4 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [42]: http://blog.pamelafox.org/2013/05/frontend-architectures-server-side-html.html "Server-side HTML vs. JS Widgets vs. Single-Page Web Apps"
 [43]: http://angular-tips.com/blog/2013/08/tip-directives-with-the-same-name/ "Tip: Directives With the Same Name"
 [44]: http://blog.freeside.co/post/60977491011/decoupling-from-the-dom-with-angular "Decoupling from the DOM with Angular"
+[45]: http://solutionoptimist.com/2013/10/07/enhance-angularjs-logging-using-decorators/ "Enhancing AngularJS Logging using Decorators"
