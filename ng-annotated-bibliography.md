@@ -1,5 +1,31 @@
 # AngularJS: an annotated bibliography
 
+### Angular JS Google Group: "service to manage the configuration of the app"
+[[46][46]] \#service \#remote-configuration
+
+The nutshell version of the question: **If my server-side app provides constants
+and/or other data to configure aspects of my Angular application, how can I
+bring those in at runtime?** Though it isn't explicitly said, the original
+question ("Can I use `$http` during `factory` or in `$provider.get` to get these
+data?") turns out to be more/less impossible; instantiation of the service has
+no mechanism for being deferred. Instead, one user recommends: 
+
+> You would prefer a json file when it is data that is shared between different
+> sides like validation rules for server and client or data that is generated at
+> build time. Then I would try to integrate the json file in the build process
+> so I get a constant definition in angular.
+
+Example:
+
+```
+angular.module('config').constant('generic', <%= json %>);
+```
+
+That one of Angular's service creator functions does _not_ take a promise (i.e.,
+as opposed to "only" a function) seems like a missed opportunity, although there
+are also some significant challenges there as well (e.g., what if the promise is
+rejected?)
+
 ### Angular Team: `angular-seed`
 [[16][16]] \#boilerplate
 
@@ -466,3 +492,4 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [43]: http://angular-tips.com/blog/2013/08/tip-directives-with-the-same-name/ "Tip: Directives With the Same Name"
 [44]: http://blog.freeside.co/post/60977491011/decoupling-from-the-dom-with-angular "Decoupling from the DOM with Angular"
 [45]: http://solutionoptimist.com/2013/10/07/enhance-angularjs-logging-using-decorators/ "Enhancing AngularJS Logging using Decorators"
+[46]: https://groups.google.com/d/msg/angular/nipAiBQ_lro/BCKYuQ6MN8EJ "service to manage the configuration of the app"
