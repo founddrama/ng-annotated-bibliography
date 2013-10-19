@@ -56,6 +56,29 @@ the wiki than in the developer guide and/or API docs?)
 
 Michael Bleigh with introductory coverage of animation in AngularJS 1.2.x.
 
+### Burleson: "Dependency Injection using RequireJS & AngularJS"
+[[48][48]] \#dependency-injection
+
+An overview of dependency injection, a comparison of what that means in
+RequireJS vs. what it means in AngularJS, and how to use RequireJS underneath
+AngularJS to handle AMD. It's worth noting that an AMD style loader seems like
+something that will eventually ship as part of AngularJS.
+
+Consider it background reading for [Burleson's post on decorators][45].
+
+### Burleson: "Enhancing AngularJS Logging using Decorators"
+[[45][45]] \#service \#decorator \#aop
+
+Though he doesn't cite something like [Gechev's methods](http://blog.mgechev.com/2013/08/07/aspect-oriented-programming-with-javascript-angularjs/),
+Thomas describes using `$provide.decorator()` as the built-into-Angular solution
+for AOP. It's a thorough example of how using the `decorator` function to modify
+services in Angular. That being said, I have mixed feelings about the slightly
+more complicated (`$log.getInstance`?) version of `$log` that he ends up with.
+(As an aside: his use of RequireJS makes this not a "pure Angular" post and
+diminishes some of the value; although I can see _why_ he went this route, I
+think it adds some unnecessary overhead w/r/t/ illustrating the specific points
+about `decorator`.)
+
 ### Conery: "Models and Services in Angular" (2013)
 [[21][21]] \#model \#service
 
@@ -358,6 +381,13 @@ behavior, as in his example), and though it may be "very intentional" in their
 code, this kind of overloading seems potentially dangerous. Use with caution;
 consider AOP instead?
 
+### Rodriguez: "Understanding Service Types"
+[[47][47]] \#service
+
+Along the same lines as the overview of service types that [Hooks][30] gave; but
+where Hooks went deeper on `factory` vs. `service` vs. `provider`, Rodriguez
+goes broader and includes `constant` and `value` and `decorator`.
+
 ### Rothenberg: "The 'Magic' behind AngularJS Dependency Injection" (2013)
 [[14][14]] \#dependency-injection \#minification \#quirks
 
@@ -394,19 +424,6 @@ Dave Smith's post on AngularJS is one of the best I've seen so far -- and mostly
 because he is able to demonstrate so much of the library's power in such a short
 and digestible post. (And/but if you want a post that's comparing several of
 these MV* frameworks, you might want to check out [Steve Sanderson's "the Seven Frameworks" post][27].
-
-### Thomas: "Enhancing AngularJS Logging using Decorators"
-[[45][45]] \#service \#decorator \#aop
-
-Though he doesn't cite something like [Gechev's methods](http://blog.mgechev.com/2013/08/07/aspect-oriented-programming-with-javascript-angularjs/),
-Thomas describes using `$provide.decorator()` as the built-into-Angular solution
-for AOP. It's a thorough example of how using the `decorator` function to modify
-services in Angular. That being said, I have mixed feelings about the slightly
-more complicated (`$log.getInstance`?) version of `$log` that he ends up with.
-(As an aside: his use of RequireJS makes this not a "pure Angular" post and
-diminishes some of the value; although I can see _why_ he went this route, I
-think it adds some unnecessary overhead w/r/t/ illustrating the specific points
-about `decorator`.)
 
 ### Varwig: "AngularJS: Views vs. Directives" (2013)
 [[28][28]] \#view \#directive
@@ -493,3 +510,5 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [44]: http://blog.freeside.co/post/60977491011/decoupling-from-the-dom-with-angular "Decoupling from the DOM with Angular"
 [45]: http://solutionoptimist.com/2013/10/07/enhance-angularjs-logging-using-decorators/ "Enhancing AngularJS Logging using Decorators"
 [46]: https://groups.google.com/d/msg/angular/nipAiBQ_lro/BCKYuQ6MN8EJ "service to manage the configuration of the app"
+[47]: http://angular-tips.com/blog/2013/08/understanding-service-types/ "Understanding Service Types"
+[48]: http://solutionoptimist.com/2013/09/30/requirejs-angularjs-dependency-injection/ "Dependency Injection using RequireJS & AngularJS"
