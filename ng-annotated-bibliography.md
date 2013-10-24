@@ -179,6 +179,22 @@ three popular libraries. In his opinion, none of the three is a clear winner
 over the others, but he does a good job of illustrating the pros and cons of
 each.
 
+### Hess: "AngularJS Directive Design Made Easy"
+[[49][49]] \#directive
+
+Sean Hess to answer the question:
+
+> How do I talk to a directive?
+
+Overall a good introduction, but two cautions:
+
+1. He introduces `attrs.$observe()` without explaining why you would use them
+   _instead_ of `@` style literal-bindings with the directive's `scope`.
+2. I disagree with the assertion that you should focus on state (i.e., "It’s
+   totally fine to have a `windowShown` boolean on your controller..."); in my
+   experience, you should be conservative w/r/t/ the state you are explicitly
+   tracking.
+
 ### Hooks: "Configuring Dependency Injection in AngularJS" (2013)
 [[30][30]] \#dependency-injection \#service
 
@@ -247,6 +263,18 @@ Angular but can be a bit daunting to newcomers ("Scopes? Restrictions? Linking
 functions!?") but do yourself a favor: have the patience to learn the
 fundamentals of directives. That will pay dividends.
 
+### Lerner: "The Definitive Guide to Angular on Mobile"
+[[50][50]] \#mobile \#cordova
+
+(Ran as part of the ng-newsletter; only presumably written by Ari Lerner.) Maybe
+less "the definitive guide" and more of a "solid introduction"; the highlight
+reel includes:
+
+- overview of `angular-touch` and `angular-gestures` re: doing touch interfaces
+  in AngularJS
+- overview of integrating [Cordova][51] into your AngularJS development workflow
+  w/r/t/ building "compiled-to-native" apps
+
 ### Lynagh: "Building an iOS weather app with Angular and ClojureScript" (2013)
 [[6][6]] \#clojurescript \#ios
 
@@ -308,6 +336,19 @@ Not specific to AngularJS, but very good.
 
 Case study is some advanced AngularJS application work around lazy loading with
 a custom directive.
+
+### Nadel: "Logging Client-Side Errors With AngularJS And Stacktrace.js"
+[[52][52]] \#logging \#error-handling
+
+Ben Nadel illustrates a custom `$exceptionHandler` provider using Stacktrace.js
+to catch client side errors and stacktraces and send them back to the server. He
+mentions in his conclusion that he was surprised at how many errors were thrown
+in production; he doesn't speak to the server-side infrastructure for logging
+the errors, but it's a worthwhile read nonetheless.
+
+Side note: the first thing I thought when I saw that he was overriding
+`$exceptionHandler` was: _Why not use a decorator?_ (And sure enough, there is a
+discussion of it in the comments.)
 
 ### Osmani: _Learning JavaScript Design Patterns_ (MVVM)
 [[39][39]] \#MVVM
@@ -512,3 +553,7 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [46]: https://groups.google.com/d/msg/angular/nipAiBQ_lro/BCKYuQ6MN8EJ "service to manage the configuration of the app"
 [47]: http://angular-tips.com/blog/2013/08/understanding-service-types/ "Understanding Service Types"
 [48]: http://solutionoptimist.com/2013/09/30/requirejs-angularjs-dependency-injection/ "Dependency Injection using RequireJS & AngularJS"
+[49]: "http://seanhess.github.io/2013/10/14/angularjs-directive-design.html "AngularJS Directive Design Made Easy"
+[50]: http://www.ng-newsletter.com/posts/angular-on-mobile.html "The Definitive Guide to Angular on Mobile"
+[51]: http://cordova.apache.org/ "Apache Cordova"
+[52]: http://www.bennadel.com/blog/2542-Logging-Client-Side-Errors-With-AngularJS-And-Stacktrace-js.htm "Logging Client-Side Errors With AngularJS And Stacktrace.js"
