@@ -56,7 +56,7 @@ the wiki than in the developer guide and/or API docs?)
 
 Michael Bleigh with introductory coverage of animation in AngularJS 1.2.x.
 
-### Burleson: "Dependency Injection using RequireJS & AngularJS"
+### Burleson: "Dependency Injection using RequireJS & AngularJS" (2013)
 [[48][48]] \#dependency-injection
 
 An overview of dependency injection, a comparison of what that means in
@@ -66,7 +66,7 @@ something that will eventually ship as part of AngularJS.
 
 Consider it background reading for [Burleson's post on decorators][45].
 
-### Burleson: "Enhancing AngularJS Logging using Decorators"
+### Burleson: "Enhancing AngularJS Logging using Decorators" (2013)
 [[45][45]] \#service \#decorator \#aop
 
 Though he doesn't cite something like [Gechev's methods](http://blog.mgechev.com/2013/08/07/aspect-oriented-programming-with-javascript-angularjs/),
@@ -179,7 +179,7 @@ three popular libraries. In his opinion, none of the three is a clear winner
 over the others, but he does a good job of illustrating the pros and cons of
 each.
 
-### Hess: "AngularJS Directive Design Made Easy"
+### Hess: "AngularJS Directive Design Made Easy" (2013)
 [[49][49]] \#directive
 
 Sean Hess to answer the question:
@@ -263,7 +263,7 @@ Angular but can be a bit daunting to newcomers ("Scopes? Restrictions? Linking
 functions!?") but do yourself a favor: have the patience to learn the
 fundamentals of directives. That will pay dividends.
 
-### Lerner: "The Definitive Guide to Angular on Mobile"
+### Lerner: "The Definitive Guide to Angular on Mobile" (2013)
 [[50][50]] \#mobile \#cordova
 
 (Ran as part of the ng-newsletter; only presumably written by Ari Lerner.) Maybe
@@ -302,8 +302,8 @@ size of each framework and more about how "rich" each one is. He lays out some
 good points w/r/t/ things you should consider when choosing such a framework
 (and/or whether you should choose one at all).
 
-### Minar: "re: MVW"
-[[38][38]]
+### Minar: "re: MVW" (2013)
+[[38][38]] \#mvw
 
 Igor Minar re: "Model-View-Whatever"; **tl;dr:** "Don't argue over the
 nomenclature; go forth and build cool apps."
@@ -337,7 +337,7 @@ Not specific to AngularJS, but very good.
 Case study is some advanced AngularJS application work around lazy loading with
 a custom directive.
 
-### Nadel: "Logging Client-Side Errors With AngularJS And Stacktrace.js"
+### Nadel: "Logging Client-Side Errors With AngularJS And Stacktrace.js" (2013)
 [[52][52]] \#logging \#error-handling
 
 Ben Nadel illustrates a custom `$exceptionHandler` provider using Stacktrace.js
@@ -350,7 +350,7 @@ Side note: the first thing I thought when I saw that he was overriding
 `$exceptionHandler` was: _Why not use a decorator?_ (And sure enough, there is a
 discussion of it in the comments.)
 
-### Osmani: _Learning JavaScript Design Patterns_ (MVVM)
+### Osmani: _Learning JavaScript Design Patterns:_ MVVM (2012)
 [[39][39]] \#MVVM
 
 Addy Osmani's detailed description of what separates MVVM from MVC.
@@ -422,7 +422,7 @@ behavior, as in his example), and though it may be "very intentional" in their
 code, this kind of overloading seems potentially dangerous. Use with caution;
 consider AOP instead?
 
-### Rodriguez: "Understanding Service Types"
+### Rodriguez: "Understanding Service Types" (2013)
 [[47][47]] \#service
 
 Along the same lines as the overview of service types that [Hooks][30] gave; but
@@ -553,7 +553,7 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [46]: https://groups.google.com/d/msg/angular/nipAiBQ_lro/BCKYuQ6MN8EJ "service to manage the configuration of the app"
 [47]: http://angular-tips.com/blog/2013/08/understanding-service-types/ "Understanding Service Types"
 [48]: http://solutionoptimist.com/2013/09/30/requirejs-angularjs-dependency-injection/ "Dependency Injection using RequireJS & AngularJS"
-[49]: "http://seanhess.github.io/2013/10/14/angularjs-directive-design.html "AngularJS Directive Design Made Easy"
+[49]: http://seanhess.github.io/2013/10/14/angularjs-directive-design.html "AngularJS Directive Design Made Easy"
 [50]: http://www.ng-newsletter.com/posts/angular-on-mobile.html "The Definitive Guide to Angular on Mobile"
 [51]: http://cordova.apache.org/ "Apache Cordova"
 [52]: http://www.bennadel.com/blog/2542-Logging-Client-Side-Errors-With-AngularJS-And-Stacktrace-js.htm "Logging Client-Side Errors With AngularJS And Stacktrace.js"
