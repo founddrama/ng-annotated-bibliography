@@ -449,6 +449,15 @@ Steve Sanderson’s round-up of Throne of JS. Amazing post--I'm going to need to
 read it two or three more times to take it all in. Many thanks to Steve for
 putting the time and effort into a post like this.
 
+### Schildknecht: "A Tale of Frankenstein and Binding to Service Values in Angular.js" (2013)
+[[53][53]] \#$scope \#$watch
+
+Steffen Schildknecht with a light deconstruction of `$scope` values with a quick
+case study and an important detour into some JavaScript fundamentals. The
+important take-away here is that you need to be mindful of the **types** of
+values that you're putting on your `$scope` (e.g., from a service) and be
+mindful of whether they are primitives (which will be copied) or references.
+
 ### Schinsky: "Animating with AngularJS" (2013)
 [[24][24]] \#animation
 
@@ -557,3 +566,4 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [50]: http://www.ng-newsletter.com/posts/angular-on-mobile.html "The Definitive Guide to Angular on Mobile"
 [51]: http://cordova.apache.org/ "Apache Cordova"
 [52]: http://www.bennadel.com/blog/2542-Logging-Client-Side-Errors-With-AngularJS-And-Stacktrace-js.htm "Logging Client-Side Errors With AngularJS And Stacktrace.js"
+[53]: http://stsc3000.github.io/blog/2013/10/26/a-tale-of-frankenstein-and-binding-to-service-values-in-angular-dot-js/ "A Tale of Frankenstein and Binding to Service Values in Angular.js"
