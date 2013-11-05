@@ -151,6 +151,15 @@ Not specific to AngularJS, but germane w/r/t/ architecture decisions.
 
 Minko Gechev presents a technique for AOP in AngularJS.
 
+### Gharat: "The Hitchhiker’s Guide to the Directive" (2013)
+[[54][54]] \#directive
+
+Amit Gharat's breadth-first coverage of directives in AngularJS. What's
+interesting about this introduction is rather than take a deep dive on any one
+particular aspect of directives (like most other introductions), he tries to
+cover at least a little something for everything under the umbrella. He also
+structured it such that later examples help to inform earlier examples.
+
 ### Hacker News: "We used to write things like..." (2013)
 [[10][10]] \#template-as-dsl \#templates \#criticism \#progressive-enhancement
 
@@ -449,6 +458,23 @@ Steve Sanderson’s round-up of Throne of JS. Amazing post--I'm going to need to
 read it two or three more times to take it all in. Many thanks to Steve for
 putting the time and effort into a post like this.
 
+### Scalyr Blog: "Optimizing AngularJS: 1200ms to 35ms" (2013)
+[[55][55]] \#performance
+
+An interesting performance-centric blog post on the Scalyr Blog that talks about
+pushing AngularJS to its limits and demonstrating a &asymp;34&times; speed-up.
+It does not come without cautions, however -- the Scalyr team "broke some rules"
+and tapped into some of the framework's underlying abstractions (e.g.,
+"private" properties and methods) and, as some pointed out in the comments, an
+alternative solution that made better use of event delegation _might_ have been
+even more performant and less complex. Despite these criticisms, the blog post
+represents an interesting case study, and illustrates several interesting
+observations about performance tuning with respect to:
+
+1. re-using DOM elements;
+2. deferred renderings; and
+3. optimizing `$watch` functions.
+
 ### Schildknecht: "A Tale of Frankenstein and Binding to Service Values in Angular.js" (2013)
 [[53][53]] \#$scope \#$watch
 
@@ -567,3 +593,5 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [51]: http://cordova.apache.org/ "Apache Cordova"
 [52]: http://www.bennadel.com/blog/2542-Logging-Client-Side-Errors-With-AngularJS-And-Stacktrace-js.htm "Logging Client-Side Errors With AngularJS And Stacktrace.js"
 [53]: http://stsc3000.github.io/blog/2013/10/26/a-tale-of-frankenstein-and-binding-to-service-values-in-angular-dot-js/ "A Tale of Frankenstein and Binding to Service Values in Angular.js"
+[54]: http://amitgharat.wordpress.com/2013/06/08/the-hitchhikers-guide-to-the-directive/ "The Hitchhiker’s Guide to the Directive"
+[55]: http://blog.scalyr.com/2013/10/31/angularjs-1200ms-to-35ms/ "Optimizing AngularJS: 1200ms to 35ms"
