@@ -458,6 +458,20 @@ Steve Sanderson’s round-up of Throne of JS. Amazing post--I'm going to need to
 read it two or three more times to take it all in. Many thanks to Steve for
 putting the time and effort into a post like this.
 
+### Savkin: "Contrasting Backbone vs. Angular" (2013)
+[[57][57]] \#comparison \#backbone
+
+Victor Savkin does a reasonably good job of contrasting Backbone.js and
+AngularJS, trying to provide a balanced pros-and-cons comparison. He does a
+better job of explaining Angular, and is borderline harsh about some of
+Backbone's fundamental design choices. That being said, I appreciate that he
+acknowledges that they're not apples-to-apples comparisons, and that Backbone is
+intentionally much more spartan.
+
+If you've narrowed your MVC search to Backbone and Angular, this is a good piece
+to read (though I'd say to find one more with a slightly more favorable
+treatment of Backbone).
+
 ### Scalyr Blog: "Optimizing AngularJS: 1200ms to 35ms" (2013)
 [[55][55]] \#performance
 
@@ -500,6 +514,16 @@ Dave Smith's post on AngularJS is one of the best I've seen so far -- and mostly
 because he is able to demonstrate so much of the library's power in such a short
 and digestible post. (And/but if you want a post that's comparing several of
 these MV* frameworks, you might want to check out [Steve Sanderson's "the Seven Frameworks" post][27].
+
+### Sun: "A Glimpse of Angular.js $scope via Example" (2013)
+[[56][56]] \#$scope \#$digest \#$evalAsync
+
+**Tl;dr:** using `$timeout` in Angular is an anti-pattern; prefer `$evalAsync`.
+
+Ruoyo Sun offers a case study that demonstrates some of the quirks of Angular's
+`$scope` lifecycle, and illustrates how to solve certain types of race conditions
+(order-of-execution problems?) using `$evalAsync` to defer execution of certain
+`$watch` handlers and other response functions.
 
 ### Varwig: "AngularJS: Views vs. Directives" (2013)
 [[28][28]] \#view \#directive
@@ -595,3 +619,5 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [53]: http://stsc3000.github.io/blog/2013/10/26/a-tale-of-frankenstein-and-binding-to-service-values-in-angular-dot-js/ "A Tale of Frankenstein and Binding to Service Values in Angular.js"
 [54]: http://amitgharat.wordpress.com/2013/06/08/the-hitchhikers-guide-to-the-directive/ "The Hitchhiker’s Guide to the Directive"
 [55]: http://blog.scalyr.com/2013/10/31/angularjs-1200ms-to-35ms/ "Optimizing AngularJS: 1200ms to 35ms"
+[56]: http://ruoyusun.com/2013/08/24/a-glimpse-of-angularjs-scope-via-example.html "A Glimpse of Angular.js $scope via Example"
+[57]: http://www.infoq.com/articles/backbone-vs-angular "Contrasting Backbone vs. Angular"
