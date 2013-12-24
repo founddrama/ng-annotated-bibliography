@@ -263,6 +263,14 @@ Daniel Lamb's Git repository of useful AngularJS test patterns. A good place to
 start some research into the testing, but still seemed to be missing some
 good/clear foundational ("simple") examples.
 
+### LeClair: "How to Unit Test Controllers In AngularJS Without Setting Your Hair On Fire"
+[[58][58]] \#testing
+
+Nathan LeClair's introduction to testing in AngularJS. He focuses on unit
+testing controllers, but the overall post offers some useful detail about
+`angular-mocks` and a decent overview of using features like `$injector` and
+`$httpBackend` for your Jasmine-based tests.
+
 ### Lerner: "Build custom directives with AngularJS" (2013)
 [[4][4]] \#directive
 
@@ -621,3 +629,4 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [55]: http://blog.scalyr.com/2013/10/31/angularjs-1200ms-to-35ms/ "Optimizing AngularJS: 1200ms to 35ms"
 [56]: http://ruoyusun.com/2013/08/24/a-glimpse-of-angularjs-scope-via-example.html "A Glimpse of Angular.js $scope via Example"
 [57]: http://www.infoq.com/articles/backbone-vs-angular "Contrasting Backbone vs. Angular"
+[58]: http://nathanleclaire.com/blog/2013/12/13/how-to-unit-test-controllers-in-angularjs-without-setting-your-hair-on-fire/ "How to Unit Test Controllers In AngularJS Without Setting Your Hair On Fire"
