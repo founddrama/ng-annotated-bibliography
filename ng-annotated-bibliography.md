@@ -51,10 +51,33 @@ Get familiar with the source material, esp. w/r/t/ `$inject`.
 In-depth discussion of prototypal inheritance in `$scope`. (More information in
 the wiki than in the developer guide and/or API docs?)
 
+### Ben-Yosef: "Writing More Maintainable Angular.js Directives" (2014)
+[[60][60]] \#directive \#require
+
+Two "best practice" style tips to help orient AngularJS beginners on how to best
+set up scaleable directives: use isolate scopes wherever possible, and make
+liberal use of the `require` property in the directive's definition. (As an
+aside: it's a fairly straightforward illustration of using `require`.)
+
 ### Bleigh: "Get Moving with Angular 1.2 Animation and Animate.css" (2013)
 [[32][32]] \#animation
 
 Michael Bleigh with introductory coverage of animation in AngularJS 1.2.x.
+
+### Briggs: "Code Organization in Angular" (2014)
+[[61][61]] \#code-organization
+
+Matt Briggs writing at the Nuology Engineering Blog on how to organize a "large"
+AngularJS project. He covers the naïve method (e.g., all-in-one), following the
+[angular-seed][16] recommendation, or else splitting by module. Splitting by
+module is his clear recommendation, and he also suggests using it in combination
+with RequireJS. Separating code per module makes sense, but there's still the
+possibility of winding up with large bloated module files; one "class" per file
+(organized in per-module directories) seems like the natural next step for the
+truly large AngularJS application, although there are some potential maintenance
+headaches with managing that many files. (Ask the question though: is it more of
+a headache to manage the individual files if you have a good build system? or
+more of a headache to sift through a thousands-of-lines file?)
 
 ### Burleson: "Dependency Injection using RequireJS & AngularJS" (2013)
 [[48][48]] \#dependency-injection
@@ -367,6 +390,16 @@ Side note: the first thing I thought when I saw that he was overriding
 `$exceptionHandler` was: _Why not use a decorator?_ (And sure enough, there is a
 discussion of it in the comments.)
 
+### Nelson: "Minimizing initialization time in AngularJS" (2013)
+[[59][59]] \#preload \#caching
+
+Zak Nelson writes about using embedded `text/ng-template` script types as an
+alternative to remote templates as a way of improving initial load times in
+AngularJS applications. He also has a few other tips, specifically around using
+`$cacheFactory` for caching and "pre-loading" certain types of API requests.
+And if you can automate a lot of these, they look like good ways to get some
+performance wins. (Using a fairly narrow definition of performance here...)
+
 ### Osmani: _Learning JavaScript Design Patterns:_ MVVM (2012)
 [[39][39]] \#MVVM
 
@@ -630,3 +663,6 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [56]: http://ruoyusun.com/2013/08/24/a-glimpse-of-angularjs-scope-via-example.html "A Glimpse of Angular.js $scope via Example"
 [57]: http://www.infoq.com/articles/backbone-vs-angular "Contrasting Backbone vs. Angular"
 [58]: http://nathanleclaire.com/blog/2013/12/13/how-to-unit-test-controllers-in-angularjs-without-setting-your-hair-on-fire/ "How to Unit Test Controllers In AngularJS Without Setting Your Hair On Fire"
+[59]: https://medium.com/p/f8ae57e2cec3 "Minimizing initialization time in AngularJS"
+[60]: http://www.codelord.net/2014/03/30/writing-more-maintainable-angular-dot-js-directives/ "Writing More Maintainable Angular.js Directives"
+[61]: http://engineering.nulogy.com/posts/code-organization-in-angular/ "Code Organization in Angular"
