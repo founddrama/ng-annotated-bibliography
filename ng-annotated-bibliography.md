@@ -1,5 +1,23 @@
 # AngularJS: an annotated bibliography
 
+### Allen: "Building Better Models For AngularJS" (2014)
+[[64][64]] \#model
+
+K. Scott Allen with a post that might have been better titled "Building Rich
+Models for AngularJS". Allen's proposal is to take the deserialized JSON data
+and effectively pass it to a constructor function to give it instance-specific
+behaviors. This is a more OO-approach to the model data and seems (to me at
+least) to be more aligned with what one might do under Ember.js or Backbone.js.
+I wouldn't necessarily agree that it's a "better" approach, but for some
+projects and some developers, such a technique may be very useful.
+
+As a critical aside: (1) I'm surprised he does not implement `valueOf` of his
+`Movie` constructor -- this seems like the sort of thing that would be useful
+w/r/t/ posting JSON data _back_ to the server when using an approach like this;
+(2) his discussion about using `instanceof` is a good one, but his
+implementation may not work as expected because of the way he's assigning the
+prototype.
+
 ### Angular JS Google Group: "service to manage the configuration of the app"
 [[46][46]] \#service \#remote-configuration
 
@@ -101,6 +119,14 @@ more complicated (`$log.getInstance`?) version of `$log` that he ends up with.
 diminishes some of the value; although I can see _why_ he went this route, I
 think it adds some unnecessary overhead w/r/t/ illustrating the specific points
 about `decorator`.)
+
+### Carroll: "How To Extend Angular's Script Directive" (2014)
+[[62][62]] \#directive \#$provide \#decorator
+
+By Josh Carroll, writing at Techno Fattie: a quick demonstration of how to use
+AngularJS decorators for extending directives (including the built-in
+directives). It's an interesting technique, and uses some powerful (albeit
+semi-obscure) AngularJS features.
 
 ### Conery: "Models and Services in Angular" (2013)
 [[21][21]] \#model \#service
@@ -226,6 +252,16 @@ Overall a good introduction, but two cautions:
    totally fine to have a `windowShown` boolean on your controller..."); in my
    experience, you should be conservative w/r/t/ the state you are explicitly
    tracking.
+
+### Hiller: "13 Steps to AngularJS Modularization" (2014)
+[[63][63]] \#modularization \#code-organization \#architecture \#separation-of-concerns
+
+Christopher Hiller (author of _Devloping an AngularJS Edge_) presents this
+step-by-step guide to taking a large AngularJS app and splitting up based on
+modules for better separation of concerns and long-term manageability. Although
+the guide is step-by-step (implying that it's easy), this kind of organization
+is more of an art than a science -- however, these steps are very useful in
+formulating one's thoughts for this kind of refactor/reorganization.
 
 ### Hooks: "Configuring Dependency Injection in AngularJS" (2013)
 [[30][30]] \#dependency-injection \#service
@@ -666,3 +702,6 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [59]: https://medium.com/p/f8ae57e2cec3 "Minimizing initialization time in AngularJS"
 [60]: http://www.codelord.net/2014/03/30/writing-more-maintainable-angular-dot-js-directives/ "Writing More Maintainable Angular.js Directives"
 [61]: http://engineering.nulogy.com/posts/code-organization-in-angular/ "Code Organization in Angular"
+[62]: http://www.technofattie.com/2014/03/25/how-to-extend-angular-script-directive.html "How To Extend Angular's Script Directive"
+[63]: http://blog.safaribooksonline.com/2014/03/27/13-step-guide-angularjs-modularization/ "13 Steps to AngularJS Modularization"
+[64]: http://odetocode.com/blogs/scott/archive/2014/03/17/building-better-models-for-angularjs.aspx "Building Better Models For AngularJS"
