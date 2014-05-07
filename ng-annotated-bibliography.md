@@ -128,6 +128,8 @@ AngularJS decorators for extending directives (including the built-in
 directives). It's an interesting technique, and uses some powerful (albeit
 semi-obscure) AngularJS features.
 
+(See also: ["Hacking Core Directives in AngularJS"][65] (Ford, 2014).)
+
 ### Conery: "Models and Services in Angular" (2013)
 [[21][21]] \#model \#service
 
@@ -602,6 +604,14 @@ Ruoyo Sun offers a case study that demonstrates some of the quirks of Angular's
 (order-of-execution problems?) using `$evalAsync` to defer execution of certain
 `$watch` handlers and other response functions.
 
+### Turnball: "Improving Angular Dirty Checking Performance"
+[[66][66]] \#$scope \#$digest \#$watch \#performance
+
+Doug Turnball with a high-level discussion of how `$watch` functions work with
+Angular's dirty checking in a given `$digest` for a given `$scope`. More
+importantly, he offers up five considerations for dirty checking and `$watch`
+functions that should improve performance under most scenarios.
+
 ### Varwig: "AngularJS: Views vs. Directives" (2013)
 [[28][28]] \#view \#directive
 
@@ -705,3 +715,5 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [62]: http://www.technofattie.com/2014/03/25/how-to-extend-angular-script-directive.html "How To Extend Angular's Script Directive"
 [63]: http://blog.safaribooksonline.com/2014/03/27/13-step-guide-angularjs-modularization/ "13 Steps to AngularJS Modularization"
 [64]: http://odetocode.com/blogs/scott/archive/2014/03/17/building-better-models-for-angularjs.aspx "Building Better Models For AngularJS"
+[65]: http://briantford.com/blog/angular-hacking-core.html "Hacking Core Directives in AngularJS"
+[66]: http://java.dzone.com/articles/improving-angular-dirty "Improving Angular Dirty Checking Performance"
