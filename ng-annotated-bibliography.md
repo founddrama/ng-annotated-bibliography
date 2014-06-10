@@ -51,7 +51,7 @@ rejected?)
 > can use it to quickly bootstrap your angular webapp projects and dev
 > environment for these projects.
 
-Arguments cane be made that this will work for small projects but maybe not for
+Arguments can be made that this will work for small projects but maybe not for
 large ones. Good source material though.
 
 ### Angular Team: "Dev Guide: Creating Services"
