@@ -51,7 +51,7 @@ rejected?)
 > can use it to quickly bootstrap your angular webapp projects and dev
 > environment for these projects.
 
-Arguments cane be made that this will work for small projects but maybe not for
+Arguments can be made that this will work for small projects but maybe not for
 large ones. Good source material though.
 
 ### Angular Team: "Dev Guide: Creating Services"
@@ -376,7 +376,7 @@ Some cool solutions they came up with for some interesting problems.
 ### Mak: "Some AngularJS pitfalls" (2013)
 [[22][22]] \#quirks
 
-Sander Mak: FOUC; jQuery + AngularJS; Minification; and directives.
+Sander Mak: FOUC; jQuery + AngularJS; minification; and directives.
 
 ### McKeachie "Size Does Matter: Choosing a Javascript MVC" (2013)
 [[40][40]]
@@ -416,7 +416,7 @@ On views, templates, and being opinionated.
 > My biggest complaint about Backbone is probably how unopinionated it is about
 > the view layer.
 
-Not specific to AngularJS, but very good.
+Not specific to AngularJS, but very good points, especially about views.
 
 ### Nadel: "Lazy Loading Image With AngularJS" (2013)
 [[25][25]] \#lazy-loading
