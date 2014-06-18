@@ -142,6 +142,15 @@ provide the API that your controllers etc. use to deal with the model data. He
 also points out that you may be tempted to overload your models with a bunch of
 behaviors. And in a nutshell he says: "Don't. That's what filters are for."
 
+### Creamer: The state of angularjs controllers (2014)
+[[67][67]] \#controller \#model \#service
+
+Jonathan Creamer with an discussion of how to use services to encapsulate the
+model in an AngularJS application, and how those services can be used in
+controllers to make model state more predictable and to keep model-related code
+out of the controller. This dovetails with some assertions made by
+[Conery (2013)][21] and arguably makes a stronger case for it.
+
 ### DeJong: "I Wish I Knew Then What I Know Now — Life With AngularJS" (2013)
 [[23][23]] \#quirks
 
@@ -717,3 +726,4 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [64]: http://odetocode.com/blogs/scott/archive/2014/03/17/building-better-models-for-angularjs.aspx "Building Better Models For AngularJS"
 [65]: http://briantford.com/blog/angular-hacking-core.html "Hacking Core Directives in AngularJS"
 [66]: http://java.dzone.com/articles/improving-angular-dirty "Improving Angular Dirty Checking Performance"
+[67]: http://jonathancreamer.com/the-state-of-angularjs-controllers/ "The state of angularjs controllers"
