@@ -373,6 +373,14 @@ Kevin J. Lynagh on building the Weathertron app:
 
 Some cool solutions they came up with for some interesting problems.
 
+### Lynch: "Debugging AngularJS Apps from the Console" (2014)
+[[68][68]] \#debugging
+
+Max Lynch posts 5 tips for dealing with AngularJS in the dev tools. If you've
+spent enough time writing unit tests for directives, a couple of these will look
+familiar enough that you'll ask "Why didn't _I_ think of that?" How useful are
+these tips? YMMV.
+
 ### Mak: "Some AngularJS pitfalls" (2013)
 [[22][22]] \#quirks
 
@@ -727,3 +735,4 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [65]: http://briantford.com/blog/angular-hacking-core.html "Hacking Core Directives in AngularJS"
 [66]: http://java.dzone.com/articles/improving-angular-dirty "Improving Angular Dirty Checking Performance"
 [67]: http://jonathancreamer.com/the-state-of-angularjs-controllers/ "The state of angularjs controllers"
+[68]: http://ionicframework.com/blog/angularjs-console/ "Debugging AngularJS Apps from the Console"
