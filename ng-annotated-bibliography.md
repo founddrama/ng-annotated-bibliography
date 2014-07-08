@@ -445,6 +445,20 @@ Side note: the first thing I thought when I saw that he was overriding
 `$exceptionHandler` was: _Why not use a decorator?_ (And sure enough, there is a
 discussion of it in the comments.)
 
+### Nadel: "Looking At Attribute Interpolation Workflow Changes In AngularJS" (2014)
+[[69][69]] \#directive \#$observe
+
+Ben Nadel with a breakdown of a small but important change in how/when directive
+attributes are interpolated and placed on the `scope`. In a nutshell: before
+AngularJS 1.2, attributes were not placed on the `scope` until the post-linking
+phase for the interpolation -- which is _itself_ a directive, meaning that those
+attributes might not be available on the `scope` for the post-link functions of
+_other_ directives on the same element. This now takes place in the pre-linking
+phase, meaning that those interpolated attributes are available to all post-link
+functions for all directives on a given element -- which is what I think we all
+expected in the first place. That said: you'll still want to be watching those
+value changes with `$observe`.
+
 ### Nelson: "Minimizing initialization time in AngularJS" (2013)
 [[59][59]] \#preload \#caching
 
@@ -736,3 +750,4 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [66]: http://java.dzone.com/articles/improving-angular-dirty "Improving Angular Dirty Checking Performance"
 [67]: http://jonathancreamer.com/the-state-of-angularjs-controllers/ "The state of angularjs controllers"
 [68]: http://ionicframework.com/blog/angularjs-console/ "Debugging AngularJS Apps from the Console"
+[69]: http://www.bennadel.com/blog/2650-looking-at-attribute-interpolation-workflow-changes-in-angularjs.htm "Looking At Attribute Interpolation Workflow Changes In AngularJS"
