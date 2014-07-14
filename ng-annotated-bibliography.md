@@ -416,6 +416,19 @@ how these feedback loops are tremendous success stories. On the other hand: I
 wish people would stop dumping on Ember.js. There's a place for higher-level
 frameworks like it, too.
 
+### Motto: "Digging into Angular's 'Controller as' syntax" (2014)
+[[70][70]] \#controller \#controller-as
+
+Todd Motto with some good coverage on Angular's "Controller as" syntax that is
+new in 1.2. His coverage is pretty thorough and he makes a very compelling case
+for why you'd want to use "Controller as" and put ViewModel items onto the
+controller's `this` object instead of injecting a `$scope`. (Although you'll
+still need `$scope` for any manual `$watch` expressions that you might want.)
+
+Also worth checking out is Motto's ["Rethinking AngularJS Controllers"][71]
+which (to me) was a bit less interesting (we've seen most of those proposals
+before) but is good as a follow-on to this one.
+
 ### Murphey: "Thoughts on a (Very) Small Project With Backbone and Backbone Boilerplate" (2012)
 [[20][20]] \#backbone \#comparison
 
@@ -751,3 +764,5 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [67]: http://jonathancreamer.com/the-state-of-angularjs-controllers/ "The state of angularjs controllers"
 [68]: http://ionicframework.com/blog/angularjs-console/ "Debugging AngularJS Apps from the Console"
 [69]: http://www.bennadel.com/blog/2650-looking-at-attribute-interpolation-workflow-changes-in-angularjs.htm "Looking At Attribute Interpolation Workflow Changes In AngularJS"
+[70]: http://toddmotto.com/digging-into-angulars-controller-as-syntax/ "Digging into Angular's \"Controller as\" syntax"
+[71]: http://toddmotto.com/rethinking-angular-js-controllers/ "Rethinking Angular Controllers"
