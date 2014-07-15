@@ -157,6 +157,15 @@ out of the controller. This dovetails with some assertions made by
 Jon DeJong re: data binding; services as singletones; `$broadcast`; `ng-view`;
 and external data manipulation.
 
+### Dickey: "Best Practices for Building Angular.js Apps" (2014)
+[[72][72]] \#architecture \#modules
+
+Jeff Dickey's post talks about what AngularJS modules are (and _are not_), and
+he goes on to describe why using it in combination with something like RequireJS
+or Browserify might actually by more trouble than it's worth. On the other hand,
+he lays out a simple Gulp build pipeline that takes care of almost all of our
+needs.
+
 ### Dobry: "Building large apps with AngularJS" (2013)
 [[1][1], [2][2], [17][17]] \#architecture \#single-page-apps
 
@@ -766,3 +775,4 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [69]: http://www.bennadel.com/blog/2650-looking-at-attribute-interpolation-workflow-changes-in-angularjs.htm "Looking At Attribute Interpolation Workflow Changes In AngularJS"
 [70]: http://toddmotto.com/digging-into-angulars-controller-as-syntax/ "Digging into Angular's \"Controller as\" syntax"
 [71]: http://toddmotto.com/rethinking-angular-js-controllers/ "Rethinking Angular Controllers"
+[72]: https://medium.com/@dickeyxxx/best-practices-for-building-angular-js-apps-266c1a4a6917 "Best Practices for Building Angular.js Apps"
