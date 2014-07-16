@@ -496,6 +496,15 @@ performance wins. (Using a fairly narrow definition of performance here...)
 
 Addy Osmani's detailed description of what separates MVVM from MVC.
 
+### Pomerantz: "The life and times of the angular provider" (2014)
+[[73][73]] \#service \#provider
+
+Very thorough look at providers and services by Zach Pomerantz. He takes a lot
+of care here to dive into the specifics of each AngularJS service creator method
+and to illustrate use-cases for each one. But his discussion of `constant` and
+`factory` and the like is just a set up for a deep-dive into `provider`.
+Required reading for anyone writing a non-trivial service in AngularJS.
+
 ### Pretorius: "AngularJS Pain Points" (2013)
 [[3][3]]
 
@@ -776,3 +785,4 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [70]: http://toddmotto.com/digging-into-angulars-controller-as-syntax/ "Digging into Angular's \"Controller as\" syntax"
 [71]: http://toddmotto.com/rethinking-angular-js-controllers/ "Rethinking Angular Controllers"
 [72]: https://medium.com/@dickeyxxx/best-practices-for-building-angular-js-apps-266c1a4a6917 "Best Practices for Building Angular.js Apps"
+[73]: http://garabagne.io/2014/06/08/the-life-and-times-of-the-angular-provider/ "The life and times of the angular provider"
