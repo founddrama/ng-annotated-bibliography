@@ -496,6 +496,24 @@ performance wins. (Using a fairly narrow definition of performance here...)
 
 Addy Osmani's detailed description of what separates MVVM from MVC.
 
+### Polishchuk: "AngularJS Performance in Large Applications"
+[[75][75]] \#performance
+
+Abraham Polishchuk presents us with a fairly comprehensive break-down of some
+performance do's-and-don't's for large AngularJS applications. (Although there's
+nothing in here specifically about the sizes of the applications themselves.)
+He covers some basic JavaScript performance techniques at the beginning before
+diving into the AngularJS specific items. The key takeaways seem to be (1) to
+limit the _number_ and _contents_ of scopes and (2) to avoid the AngularJS
+event system. Some of it reads like FUD ("Don't use filters!") but there's also
+good advice here, especially w/r/t/ limiting scope and _in particular_ his
+points about limiting the use of `$watch`.
+
+That being said: this seems to align with my recent criticism -- that it isn't
+so much that AngularJS _itself_ isn't performant, but that it's (arguably) too
+easy (using the "by default" features) to get youself into a poor performance
+situation.
+
 ### Pomerantz: "The life and times of the angular provider" (2014)
 [[73][73]] \#service \#provider
 
@@ -591,6 +609,15 @@ determine exactly why minification broke his application.
 Alex Rothenberg with a TDD app dev case study and a look into how you can test
 your AngularJS apps. Like many of the other AngularJS testing articles though,
 it is a decent introduction but leaves out some information.
+
+### Samuell: "Learning AngularJS Magic: Expressions" (2014)
+[[74][74]] \#expressions
+
+Neville Samuell presents a very approachable and easily digestible explanation
+of AngularJS expressions. He introduces the `$parse` service and goes as far as
+introducing the lexer, which is great because by the end of the post you will
+have a good understanding of the expressions themselves but also how AngularJS
+interprets them.
 
 ### Sanderson: "Rich JavaScript Applications – the Seven Frameworks (Throne of JS, 2012)" (2012)
 [[27][27]] \#comparison
@@ -786,3 +813,5 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [71]: http://toddmotto.com/rethinking-angular-js-controllers/ "Rethinking Angular Controllers"
 [72]: https://medium.com/@dickeyxxx/best-practices-for-building-angular-js-apps-266c1a4a6917 "Best Practices for Building Angular.js Apps"
 [73]: http://garabagne.io/2014/06/08/the-life-and-times-of-the-angular-provider/ "The life and times of the angular provider"
+[74]: http://www.pathgather.com/blog/2014/12/7/learning-angularjs-magic-expressions "Learning AngularJS Magic: Expressions"
+[75]: https://www.airpair.com/angularjs/posts/angularjs-performance-large-applications "AngularJS Performance in Large Applications"
