@@ -97,6 +97,21 @@ headaches with managing that many files. (Ask the question though: is it more of
 a headache to manage the individual files if you have a good build system? or
 more of a headache to sift through a thousands-of-lines file?)
 
+### Burgdorf: "Using ES6 with Angular today"
+[[76][76]] \#ES6 \#patterns
+
+Christoph Burgdorf provides a high-level example of what it's like to use
+ECMAScript 6 with AngularJS right now. He talks a bit about ES6 modules, its
+class system, inheritance, and how, when you put those together, you start to
+get AngularJS code that is "just plain vanilla JavaScript". Considering that
+this is some of the promise of AngularJS all along, it's not surprising that we
+are starting to see posts like this -- it's also _encouraging_ because it
+reinforces a lot of the potential that can be realized by using a framework that
+leans heavily on core language-level features.
+
+Side note: the blog post references the "6to5" transpiler which has since been
+re-branded as [Babel][77].
+
 ### Burleson: "Dependency Injection using RequireJS & AngularJS" (2013)
 [[48][48]] \#dependency-injection
 
@@ -815,3 +830,5 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [73]: http://garabagne.io/2014/06/08/the-life-and-times-of-the-angular-provider/ "The life and times of the angular provider"
 [74]: http://www.pathgather.com/blog/2014/12/7/learning-angularjs-magic-expressions "Learning AngularJS Magic: Expressions"
 [75]: https://www.airpair.com/angularjs/posts/angularjs-performance-large-applications "AngularJS Performance in Large Applications"
+[76]: http://blog.thoughtram.io/angularjs/es6/2015/01/23/exploring-angular-1.3-using-es6.html "Using ES6 with Angular today"
+[77]: https://babeljs.io/ "Babel: The transpiler for writing next generation JavaScript"
