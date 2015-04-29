@@ -77,6 +77,19 @@ set up scaleable directives: use isolate scopes wherever possible, and make
 liberal use of the `require` property in the directive's definition. (As an
 aside: it's a fairly straightforward illustration of using `require`.)
 
+### Birman: How can React and Flux help us create better Angular applications? (2014)
+[[79][79]] \#react \#flux \#architecture
+
+Gil Birman writing, and rather than do a "simple" side-by-side comparison of
+React and AngularJS, he opts to focus on the lessons learned from Flux and
+discuss how to best apply those architectural patterns in an AngularJS
+application. (Side note: it wouldn't be too much of a stretch to take this and
+apply it to just about any other framework.) The key take-aways are:
+
+  1. The Flux architecture is what makes things easier to reason about.
+  2. And that's all about uni-directional dataflow and stateless components/directives.
+  3. There's no reason you can't do this in Angular.
+
 ### Bleigh: "Get Moving with Angular 1.2 Animation and Animate.css" (2013)
 [[32][32]] \#animation
 
@@ -420,6 +433,15 @@ as well. The title is a little misleading because he's talking less about the
 size of each framework and more about how "rich" each one is. He lays out some
 good points w/r/t/ things you should consider when choosing such a framework
 (and/or whether you should choose one at all).
+
+### McNally: Coming to React from Angular (2015)
+[[78][78]] \#react \#comparison
+
+Ian McNally dips into React after having grown accustomed to and proficient with
+AngularJS. A good piece that compares the two from the position that a lot of
+developers come from. He does a good job of differentiating where the two differ,
+and some of the pros and cons of each, without calling one a "winner" over the
+other.
 
 ### Minar: "re: MVW" (2013)
 [[38][38]] \#mvw
@@ -832,3 +854,5 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [75]: https://www.airpair.com/angularjs/posts/angularjs-performance-large-applications "AngularJS Performance in Large Applications"
 [76]: http://blog.thoughtram.io/angularjs/es6/2015/01/23/exploring-angular-1.3-using-es6.html "Using ES6 with Angular today"
 [77]: https://babeljs.io/ "Babel: The transpiler for writing next generation JavaScript"
+[78]: http://www.stridenyc.com/blog/2015/3/4/coming-to-react-from-angular "Coming to React from Angular"
+[79]: https://medium.com/@gilbox/how-can-react-and-flux-help-us-create-better-stronger-faster-angular-applications-639247898fb "How can React and Flux help us create better Angular applications?"
