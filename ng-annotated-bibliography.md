@@ -158,6 +158,22 @@ semi-obscure) AngularJS features.
 
 (See also: ["Hacking Core Directives in AngularJS"][65] (Ford, 2014).)
 
+### Clemmons: "Angular is Easy. React is Hard." (2015)
+[[80][80]] \#react \#comparison
+
+Eric Clemmons' perspective on the perception (myth?) that React is easier to
+reason about and therefore easier overall than AngularJS. Among his main
+criticisms of React: that it's only solving the view problem, that you need to
+"bring your own architecture", that there subtle bugs may be introduced by JSX,
+and that confusion around props vs. state can lead to tightly-coupled components.
+
+Ultimately Clemmons' opinion is that AngularJS is better for prototyping while
+React is a better fit for ["universal"][81] applications. He admits though that
+all his points may be irrelevant in the near future as newer versions of these
+frameworks come online. His conclusions seem even-handed and worthy of
+consideration (though I think he under-states how useful AngularJS _can_ be when
+properly applied).
+
 ### Conery: "Models and Services in Angular" (2013)
 [[21][21]] \#model \#service
 
@@ -856,3 +872,5 @@ about `$apply`, `$digest`, and `$$phase`; internationalization and localization.
 [77]: https://babeljs.io/ "Babel: The transpiler for writing next generation JavaScript"
 [78]: http://www.stridenyc.com/blog/2015/3/4/coming-to-react-from-angular "Coming to React from Angular"
 [79]: https://medium.com/@gilbox/how-can-react-and-flux-help-us-create-better-stronger-faster-angular-applications-639247898fb "How can React and Flux help us create better Angular applications?"
+[80]: https://medium.com/@ericclemmons/angular-is-easy-react-is-hard-6f55e360482c "Angular is Easy. React is Hard."
+[81]: https://medium.com/@mjackson/universal-javascript-4761051b7ae9 "Universal JavaScript"
